@@ -66,5 +66,8 @@ post '/sessions' do
 		flash[:errors] = ["The email or password is incorrect"]
 		erb :"sessions/new"
 	end
+end
 
+delete '/sessions' do
+  "Good bye"
 end
