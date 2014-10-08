@@ -12,4 +12,5 @@ group :development, :test do
 	gem 'rspec'
 	gem 'shotgun'
 	gem 'database_cleaner'
+	gem 'rack-flash3'
 end
