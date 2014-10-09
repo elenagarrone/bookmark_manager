@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'sinatra'
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
+gem 'rack-flash3'
+gem 'bcrypt-ruby'
+gem 'rack'
 
 group :development, :test do
 	gem 'cucumber'
@@ -12,5 +15,4 @@ group :development, :test do
 	gem 'rspec'
 	gem 'shotgun'
 	gem 'database_cleaner'
-	gem 'rack-flash3'
 end
