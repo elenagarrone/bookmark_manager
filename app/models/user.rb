@@ -9,7 +9,6 @@ class User
 	property :password_digest, Text
 	property :password_token, Text
 	property :password_token_timestamp, Time
-	property :new_password, Text
 
 	attr_reader :password
 	attr_accessor :password_confirmation

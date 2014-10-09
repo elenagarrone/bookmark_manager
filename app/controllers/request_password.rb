@@ -16,18 +16,20 @@ post '/request_password' do
 	end
 end
 
-get "/request_password/:token" do
-	erb :"/users/new_password"
+get "/users/request_password/:token" do
+	user = User.first(:password_token => params[:token])
+	return redirect to ('/request_password') if !user# the token is in the db
+	time_request = user.password_token_timestamp 
+	if Time.now - time_request < 3600
+		erb :"/users/new_password"
+	else
+		flash[:errors] = ["Sorry, this token is invalid. Please try again."]
+		redirect to ('/request_password')
+	# ask for a email password again
+	end
 end
 
-# post '/request_password/new_password' do
-#    new_password = params[:new_password]
-#    user = User.first(:new_password => new_password,
-# 					 :new_password_confirmation => params[:password_confirmation])
-#    if user.new_password == user.password_token
-#    	  user.save
-#    	  "Your password has been updated"
-#    	else
-#    		"Try again."
-#    	end
-# end
+post '/request_password/new_password' do
+  "Hello World"
+end
+
