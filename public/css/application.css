@@ -60,19 +60,40 @@ a.button.highlighten {
 }
 
 
+
 /*=========================
       BOOKEMARKS BOXES
 =========================*/
 
-ul#links {
-  font-family: Helvetica, Arial, Sans-serif;
-  width: 35%;
-  background: gold;
-  display: block;
+#links-container {
+  background-color:#e2e2e2;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  padding: 10px;
+  width: 680px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+}
+
+.link {
+  font-family: Helvetica, Arial, Sans-serif;
+  background: rgb(255, 252, 236);
+  display: block;
+  margin: 10px;
   padding: 15px 15px 15px 15px;
   list-style-type: none;
   box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+
+.link a.title {
+    letter-spacing: 1px;
+  }
+
+.link .description {
+  margin: 10px inherit;
+}
+
+.link .source {
+  float: right;
+  font-size: 12px;
 }
