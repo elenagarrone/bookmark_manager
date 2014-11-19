@@ -6,7 +6,7 @@ task :auto_upgrade do
 	puts "Auto-upgrade complete (no data loss)"
 end
 
-task :auto_migrade do
-	DataMapper.auto_migrade!
-	puts "Auto-migrate complete (data could have been lost"
+task :auto_migrate do
+	DataMapper.auto_migrate!
+	puts "Auto-migrate complete (data could have been lost)"
 end
