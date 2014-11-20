@@ -23,4 +23,3 @@ Technologies:
 To do:
 -----
 - [ ] password token should be sent by email;
-- [ ] password needs to be entered;
