@@ -22,8 +22,6 @@ Technologies:
 
 To do:
 -----
-- [ ] users should only post link if logged in;
-- [ ] 'add link' button should not be visible in '/links/new';
 - [ ] password token should be sent by email;
 - [ ] 'sign out' button to style and post to a styled page;
 - [ ] password needs to be entered;

@@ -12,13 +12,13 @@
 
   <div id="user-links">
     <% if current_user %>
-      <span id="welcome-message">
-        Welcome, <%= current_user.email %>  
-      </span>
     
       <form id="sign-out" method="post" action="/sessions">
-        <input type="hidden" name="_method" value="delete">
-        <input type="submit" value="Sign out">
+        <span id="welcome-message">
+          Welcome, <%= current_user.email %>
+          <input type="hidden" name="_method" value="delete">
+          <input type="submit" value="Sign out" class='sign_out'>
+        </span>
       </form>
 
     <% else %>
