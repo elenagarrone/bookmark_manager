@@ -16,7 +16,6 @@ header #logo {
   margin: auto 0;
   display: flex;  
   font-family: 'Bitter', serif;
-/*  font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;*/
   font-size: 22px;
 }
 
@@ -60,7 +59,7 @@ a.button {
 }
 
 a.button:hover {
-    background-color:#D26935;
+  background-color:#D26935;
 }
 
 a.button.highlighten {
@@ -69,13 +68,9 @@ a.button.highlighten {
 }
 
 a.button.highlighten:hover {
-    background-color:#80A24A;
+  background-color:#80A24A;
 }
 
-span#search_tags {
-  padding-top: 8px;
-  position: absolute;
-}
 
 /*=========================
       BOOKEMARKS BOXES
@@ -314,3 +309,47 @@ footer p {
 .smart-orange .button:hover {
   background-color:#D26935;
 }
+
+/*================================
+            SEARCH TAGS
+================================*/
+
+.button_tag {
+  font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+  font-size:16px;
+  display:inline-block;
+  width:100px;
+  height: 38px;
+  background-color: #9DC45F;
+  border: 1px solid #ccc;
+  color:white;
+  text-align:center;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-shadow: 0 0 2px rgba(0,0,0,0.4);
+}
+
+.button_tag:hover {
+    background-color:#80A24A;
+}
+
+input.search_tags {
+  width: initial;
+}
+
+form#tags {
+  margin-left: 1.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
