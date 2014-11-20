@@ -23,11 +23,16 @@ feature "User browses the list of links" do
 		expect(page).to have_content("Makers Academy")
 	end
 
-	scenario "filtered by tag" do
-		visit '/tags/search'
-		expect(page).not_to have_content("Makers Academy")
-		expect(page).not_to have_content("Code.org")
-		expect(page).to have_content("Google")
-		expect(page).to have_content("Bing")
+	scenario "by typing the tag and pressing a button" do
+		visit '/'
+		expect(page).to have_button('Search tag')
 	end
+
+	# scenario "filtered by tag" do
+	# 	visit '/tags/search'
+	# 	expect(page).not_to have_content("Makers Academy")
+	# 	expect(page).not_to have_content("Code.org")
+	# 	expect(page).to have_content("Google")
+	# 	expect(page).to have_content("Bing")
+	# end
 end

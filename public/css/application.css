@@ -72,6 +72,10 @@ a.button.highlighten:hover {
     background-color:#80A24A;
 }
 
+span#search_tags {
+  padding-top: 8px;
+  position: absolute;
+}
 
 /*=========================
       BOOKEMARKS BOXES

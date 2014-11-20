@@ -1,7 +1,12 @@
 <header>
   <div id="logo"><a href="/" id="homepage-logo">Bookmark Manager</a></div>
   <a href="/links/new" type="submit" class="button highlighten">Add link</a>
-  <input type="submit" value="Add link">
+
+  <form id="tags" method="get" action="/tags">
+    <input name="search_tags" type="text">
+    <input type="submit" value="Search tag">
+  </form>
+
   <div id="user-links">
     <% if current_user %>
       <span id="welcome-message">
