@@ -15,6 +15,7 @@ class User
 
 	validates_confirmation_of :password, :message => "Sorry, your passwords don't match"
 	validates_uniqueness_of :email
+	validates_presence_of :password
 
 	def password=(password)
 		@password = password

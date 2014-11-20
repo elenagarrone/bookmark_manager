@@ -23,5 +23,4 @@ Technologies:
 To do:
 -----
 - [ ] password token should be sent by email;
-- [ ] 'sign out' button to style and post to a styled page;
 - [ ] password needs to be entered;

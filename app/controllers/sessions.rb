@@ -17,5 +17,5 @@ end
 
 delete '/sessions' do
 	session.clear
-  "Good bye"
+  erb :"sessions/leaving"
 end

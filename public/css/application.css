@@ -367,6 +367,18 @@ form#tags {
 }
 
 
+/*======================
+      LEAVING PAGE
+======================*/
+
+h1#leaving {
+  color: dimgrey;
+  width: 29.5%;
+  padding-top: 20%;
+  margin: auto;
+  font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+  font-size: 30px;
+}
 
 
 
