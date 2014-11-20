@@ -1,11 +1,12 @@
 <header>
   <div id="logo"><a href="/" id="homepage-logo">Bookmark Manager</a></div>
+  <% unless @new_link %>
   <a href="/links/new" type="submit" class="button highlighten">Add link</a>
-
   <form id="tags" method="get" action="/tags">
     <input class="search_tags" name="search_tags" type="text">
     <input class='button_tag' type="submit" value="Search tag">
   </form>
+  <% end %>
 
   <div id="user-links">
     <% if current_user %>

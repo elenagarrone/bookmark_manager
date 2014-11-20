@@ -204,7 +204,7 @@ footer p {
   margin-top: 10px;
   color: #5E5E5E;
 }
-.smart-green input[type="text"] {
+.smart-green input[type="text"], input[type='url'] {
   color: #555;
   height: 30px;
   line-height:15px;
@@ -281,7 +281,7 @@ footer p {
   margin-top: 10px;
   color: #5E5E5E;
 }
-.smart-orange input[type="password"], input[type='url'], input[type='text'], input[type="email"] {
+.smart-orange input[type="password"], input[type='text'], input[type="email"] {
   color: #555;
   height: 30px;
   line-height:15px;

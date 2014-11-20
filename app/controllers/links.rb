@@ -7,5 +7,6 @@ post '/links' do
 end
 
 get '/links/new' do
+  @new_link = true
   erb :'links/new'
 end
