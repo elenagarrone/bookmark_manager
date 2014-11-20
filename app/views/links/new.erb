@@ -1,8 +1,33 @@
 <div id="new-link">
-  <form action="/links" method="post">
+<form action="/links" method="post" class="smart-green">
+    <h1>Add link
+        <span>Please fill all the fields.</span>
+    </h1>
+    <label>
+        <span>URL :</span>
+        <input id="url" type="text" name="url" placeholder="www.example.com" />
+    </label>
+    
+    <label>
+        <span>Title :</span>
+        <input id="title" type="text" name="title" placeholder="title" />
+    </label>
+    
+    <label>
+        <span>Tags :</span>
+        <input id="tags" type="text" name="tags" placeholder="tags"></input>
+    </label> 
+     <label>
+        <span>&nbsp;</span> 
+        <input type="button" class="button" value="Add" /> 
+    </label>    
+</form>
+</div>
+
+
+<!--   <form action="/links" method="post">
     Url: <input type="text" name="url">
     Title: <input type="text" name="title">
     Tags: <input type="text" name="tags">
     <input type="submit" value="Add link">
-  </form>
-</div>
+  </form> -->
