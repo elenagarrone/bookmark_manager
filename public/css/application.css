@@ -71,23 +71,29 @@ a.button.highlighten:hover {
   background-color:#80A24A;
 }
 
-.sign-out {
+input.sign_out {
+  font-size: inherit;
   font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
-  display:inline-block;
-  width:80px;
-  height: 26px;
+  display: inline-block;
+  width: 80px;
+  height: 38px;
   background-color: #F09A6F;
   border: 1px solid #ccc;
-  color:white;
-  text-align:center;
+  color: white;
+  text-align: center;
   text-decoration: none;
   border-radius: 4px;
   margin-left: 5px;
   margin-right: 5px;
   text-shadow: 0 0 2px rgba(0,0,0,0.4);
-  padding-top:10px;
+}
+input.sign_out:hover {
+  background-color:#D26935;
 }
 
+span#welcome-message {
+  font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+}
 
 /*=========================
       BOOKEMARKS BOXES
@@ -298,7 +304,7 @@ footer p {
   margin-top: 10px;
   color: #5E5E5E;
 }
-.smart-orange input[type="password"], input[type='text'], input[type="email"] {
+.smart-orange input[type="password"],input[type='text'], input[type="email"] {
   color: #555;
   height: 30px;
   line-height:15px;
