@@ -281,7 +281,7 @@ footer p {
   margin-top: 10px;
   color: #5E5E5E;
 }
-.smart-orange input[type="password"], input[type="email"] {
+.smart-orange input[type="password"], input[type='url'], input[type='text'], input[type="email"] {
   color: #555;
   height: 30px;
   line-height:15px;
@@ -332,7 +332,7 @@ footer p {
 }
 
 .button_tag:hover {
-    background-color:#80A24A;
+  background-color:#80A24A;
 }
 
 input.search_tags {
