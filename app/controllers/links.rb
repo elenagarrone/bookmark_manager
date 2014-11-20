@@ -7,6 +7,6 @@ post '/links' do
 end
 
 get '/links/new' do
-  @new_link = true
+  @on_page = true
   erb :'links/new'
 end
