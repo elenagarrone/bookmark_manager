@@ -43,7 +43,7 @@ a.button {
   width:80px;
   height: 26px;
   background-color: #F09A6F;
-  border: 1px solid black;
+  border: 1px solid #ccc;
   color:white;
   text-align:center;
   text-decoration: none;
@@ -54,17 +54,26 @@ a.button {
   padding-top:10px;
 }
 
+a.button:hover {
+    background-color:#D26935;
+}
+
 a.button.highlighten {
   margin-left: 5%;
   background-color: #9DC45F;
 }
+
+a.button.highlighten:hover {
+    background-color:#80A24A;
+}
+
 
 /*=========================
       BOOKEMARKS BOXES
 =========================*/
 
 #links-container {
-  background-color:#e2e2e2;
+  background-color:#F8F8F8;;
   box-shadow: 0 0 5px rgba(0,0,0,0.4);
   padding: 10px;
   width: 680px;
@@ -75,7 +84,7 @@ a.button.highlighten {
 
 .link {
   font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
-  background: #F8F8F8;
+  background: #FBFBFB;
   display: block;
   margin: 10px;
   padding: 15px 15px 15px 15px;
@@ -145,11 +154,10 @@ footer p {
           ADD LINKS
 ===========================*/
 
-/*######## Smart Green ########*/
 .smart-green {
+    margin-top:6%;
     margin-left:auto;
     margin-right:auto;
-
     max-width: 500px;
     background: #F8F8F8;
     padding: 30px 30px 20px 30px;
@@ -158,6 +166,7 @@ footer p {
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.6);
 }
 .smart-green h1 {
     font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
