@@ -84,7 +84,15 @@ a.button.highlighten {
 }
 
 .link a.title {
-    letter-spacing: 1px;
+  color:#fd6214;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.link a.title:visited {
+  color:#fd6214;
+}
+
   }
 
 .link .description {
@@ -102,9 +110,13 @@ a.button.highlighten {
 ============================*/
 
 footer {
+  font-family: Helvetica, Arial, Sans-serif;
   display:flex;
   background-color: #e2e2e2;
-  margin-top: 30px;
+  width:100%;
+  position:fixed;
+  bottom:0;
+  text-align: right;
 }
 
 footer > * {
@@ -118,6 +130,10 @@ footer img {
 footer#technologies {
   -webkit-flex:1px;
   flex:1;
+}
+
+div#technologies {
+  margin-left: auto;
 }
 
 footer p {
