@@ -1,10 +1,10 @@
 Bookmark manager
 ================
 
-We are going to build a bookmark manager, similar to pineapple.io or delicious.com in spirit. A bookmark manager is a good use case for exploring how relational databases work.
-<img src='http://i58.tinypic.com/20qxksg.jpg'>
-<img src='http://i61.tinypic.com/29y2mw4.jpg'>
-<img src='http://i60.tinypic.com/2n17voh.jpg'>
+During week four we built a bookmark manager, similar to pineapple.io or delicious.com in spirit. A bookmark manager is a good use case for exploring how relational databases work.
+<img src='http://i57.tinypic.com/15pqtyd.jpg'>
+<img src='http://i58.tinypic.com/2q88paf.jpg'>
+<img src='http://i62.tinypic.com/2d6oux.jpg'>
 
 Technologies:
 ------------
