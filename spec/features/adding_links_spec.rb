@@ -26,7 +26,7 @@ feature "User adds a new link" do
 			fill_in 'url', :with => url
 			fill_in 'title', :with => title
 			fill_in 'tags', :with => tags.join(' ')
-			click_button 'Add link'
+			click_button 'Add'
 		end
 	end
 end
