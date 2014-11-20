@@ -2,8 +2,9 @@ Bookmark manager
 ================
 
 We are going to build a bookmark manager, similar to pineapple.io or delicious.com in spirit. A bookmark manager is a good use case for exploring how relational databases work.
-
-A bookmark manager is a website to maintain a collection of links, organised by tags. You can use it to save a webpage you found useful. 
+<img src='http://i58.tinypic.com/20qxksg.jpg'>
+<img src='http://i61.tinypic.com/29y2mw4.jpg'>
+<img src='http://i60.tinypic.com/2n17voh.jpg'>
 
 Technologies:
 ------------
@@ -17,8 +18,12 @@ Technologies:
 - DataMapper
 - HTML/CSS
 
+######It's a work in progress but you can have a look at it here: https://elenabookmarkmanager.herokuapp.com/
+
 To do:
-----
-- [ ] add tags to the webpages you saved to find them later; 
-- [ ] browse links other users have added;
-- [ ] CSS.
+-----
+- [ ] users should only post link if logged in;
+- [ ] 'add link' button should not be visible in '/links/new';
+- [ ] password token should be sent by email;
+- [ ] 'sign out' button to style and post to a styled page;
+- [ ] validations.
