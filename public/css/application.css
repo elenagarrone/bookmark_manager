@@ -281,7 +281,7 @@ footer p {
   margin-top: 10px;
   color: #5E5E5E;
 }
-.smart-orange input[type="password"], input[type="text"] {
+.smart-orange input[type="password"], input[type="email"] {
   color: #555;
   height: 30px;
   line-height:15px;
