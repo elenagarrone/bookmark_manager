@@ -80,6 +80,7 @@ a.button.highlighten:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .link {
@@ -124,7 +125,7 @@ footer {
   background-image: linear-gradient(to bottom, #e2e2e2, #ffffff);
   border-top: 1px solid #ccc;
   width:100%;
-  position:fixed;
+  position:relative;
   bottom:0;
   text-align: right;
 }
@@ -151,11 +152,12 @@ footer p {
 }
 
 /*===========================
-          ADD LINKS
+      ADD LINKS FORM
 ===========================*/
 
 .smart-green {
     margin-top:6%;
+    margin-bottom:6%;
     margin-left:auto;
     margin-right:auto;
     max-width: 500px;
@@ -197,7 +199,7 @@ footer p {
     margin-top: 10px;
     color: #5E5E5E;
 }
-.smart-green input[type="text"], .smart-green select {
+.smart-green input[type="text"] {
     color: #555;
     height: 30px;
     line-height:15px;
@@ -212,17 +214,6 @@ footer p {
     font: normal 14px/14px Arial, Helvetica, sans-serif;
 }
 
-.smart-green select {
-    background: url('down-arrow.png') no-repeat right, -moz-linear-gradient(top, #FBFBFB 0%, #E9E9E9 100%);
-    background: url('down-arrow.png') no-repeat right, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#E9E9E9));
-   appearance:none;
-    -webkit-appearance:none; 
-   -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-    width:100%;
-    height:30px;
-}
 .smart-green .button {
     background-color: #9DC45F;
     border-radius: 5px;
@@ -235,6 +226,160 @@ footer p {
 }
 .smart-green .button:hover {
     background-color:#80A24A;
+}
+
+/*===========================
+        SIGN OUT FORM
+===========================*/
+
+.smart-orange {
+    margin-top:6%;
+    margin-bottom:6%;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F8F8F8;
+    padding: 30px 30px 20px 30px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+.smart-orange h1 {
+    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 20px 0px 20px 40px;
+    display: block;
+    margin: -30px -30px 10px -30px;
+    color: #FFF;
+    background: #F09A6F;
+    text-shadow: 1px 1px 1px #949494;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-bottom:1px solid #D26935;
+
+}
+.smart-orange h1>span {
+    display: block;
+    font-size: 11px;
+    color: #FFF;
+}
+
+.smart-orange label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.smart-orange label>span {
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+.smart-orange input[type="password"], input[type="text"] {
+    color: #555;
+    height: 30px;
+    line-height:15px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font: normal 14px/14px Arial, Helvetica, sans-serif;
+}
+
+.smart-orange .button {
+    background-color: #F09A6F;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
+}
+.smart-orange .button:hover {
+    background-color:#D26935;
+}
+
+/*===========================
+        SIGN IN FORM
+===========================*/
+
+.smart-orange {
+    margin-top:6%;
+    margin-bottom:6%;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F8F8F8;
+    padding: 30px 30px 20px 30px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+.smart-orange h1 {
+    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 20px 0px 20px 40px;
+    display: block;
+    margin: -30px -30px 10px -30px;
+    color: #FFF;
+    background: #F09A6F;
+    text-shadow: 1px 1px 1px #949494;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-bottom:1px solid #D26935;
+
+}
+.smart-orange h1>span {
+    display: block;
+    font-size: 11px;
+    color: #FFF;
+}
+
+.smart-orange label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.smart-orange label>span {
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+.smart-orange input[type="password"], input[type="text"] {
+    color: #555;
+    height: 30px;
+    line-height:15px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font: normal 14px/14px Arial, Helvetica, sans-serif;
+}
+
+.smart-orange .button {
+    background-color: #F09A6F;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
+}
+.smart-orange .button:hover {
+    background-color:#D26935;
 }
 
 
