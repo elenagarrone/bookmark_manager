@@ -15,9 +15,7 @@ feature "Buttons" do
       
     feature 'While user is signed out' do
 
-
       feature "while on the homepage" do
-
         scenario "can see the 'Sign in' and 'Sign up'" do
           sign_out("test@test.com", "test")
           visit '/'
@@ -26,15 +24,13 @@ feature "Buttons" do
           expect(page).not_to have_button('Sign out')
           expect(page).not_to have_link('Add link')
         end
-
       end
-
+  
     end
 
     feature "While user is signed in" do
 
       feature "while on the homepage" do
-
         scenario "can see the 'Sign out' and 'Add link'" do
           visit '/'
           expect(page).to have_button('Sign out')
@@ -42,8 +38,18 @@ feature "Buttons" do
           expect(page).not_to have_link('Sign in')
           expect(page).not_to have_link('Sign up')
         end
-
       end
 
-  end
+      feature "while on the add link page" do
+        scenario "can see the 'Sign out'" do
+          visit '/links/new'
+          expect(page).to have_button('Sign out')
+          expect(page).not_to have_link('Add link')
+          expect(page).not_to have_link('Sign in')
+          expect(page).not_to have_link('Sign up')
+        end
+      end
+
+    end
+
 end
