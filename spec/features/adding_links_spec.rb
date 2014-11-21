@@ -1,6 +1,18 @@
 require 'spec_helper'
 
 feature "User adds a new link" do
+
+	scenario "only when logged in" do
+		visit '/'
+		expect(page).not_to have_button('Add link')
+		User.create(:email => "test@test.com",
+				:password => 'test',
+				:password_confirmation => 'test')
+		sign_in("test@test.com", "test")
+		save_and_open_page
+		expect(page).to have_content("Add link")
+	end
+	
 	scenario "when browsing the homepage" do
 		expect(Link.count).to eq(0)
 		visit '/links/new'

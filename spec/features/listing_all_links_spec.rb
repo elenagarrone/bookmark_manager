@@ -27,7 +27,7 @@ feature "User browses the list of links" do
 			expect(page).to have_button('Search tag')
 		end
 
-		it "filtered tags" do
+		scenario "filtered tags" do
 				visit '/'
 				fill_in("search_tags", with: "search")
 				click_button('Search tag')

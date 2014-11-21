@@ -61,4 +61,5 @@ feature 'User signs out' do
 		expect(page).to have_content("Thank you for visiting, come back soon!")
 		expect(page).not_to have_content("Welcome, test@test.com")
 	end
+
 end
