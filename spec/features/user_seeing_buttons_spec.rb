@@ -3,28 +3,47 @@ require 'features/helpers/session.rb'
 
 include SessionHelpers
 
-feature 'While user is signs out' do
+
+feature "Buttons" do
 
   before(:each) do
     User.create(:email => "test@test.com",
         :password => 'test',
         :password_confirmation => 'test')
-        sign_in("test@test.com", "test")
-        sign_out("test@test.com", "test")
+    sign_in("test@test.com", "test")
   end
+      
+    feature 'While user is signed out' do
 
-  feature "while on the homepage" do
 
-    scenario "can see the 'Sign in' button" do
-      visit '/'
-      expect(page).to have_link('Sign in')
+      feature "while on the homepage" do
+
+        scenario "can see the 'Sign in' and 'Sign up'" do
+          sign_out("test@test.com", "test")
+          visit '/'
+          expect(page).to have_link('Sign in')
+          expect(page).to have_link('Sign up')
+          expect(page).not_to have_button('Sign out')
+          expect(page).not_to have_link('Add link')
+        end
+
+      end
+
     end
 
-    scenario "can see the 'Sign up' button" do
-      visit '/'
-      expect(page).to have_link('Sign up')
-    end
+    feature "While user is signed in" do
+
+      feature "while on the homepage" do
+
+        scenario "can see the 'Sign out' and 'Add link'" do
+          visit '/'
+          expect(page).to have_button('Sign out')
+          expect(page).to have_link('Add link')
+          expect(page).not_to have_link('Sign in')
+          expect(page).not_to have_link('Sign up')
+        end
+
+      end
 
   end
-
 end
