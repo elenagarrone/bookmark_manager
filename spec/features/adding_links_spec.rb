@@ -9,7 +9,6 @@ feature "User adds a new link" do
 				:password => 'test',
 				:password_confirmation => 'test')
 		sign_in("test@test.com", "test")
-		save_and_open_page
 		expect(page).to have_content("Add link")
 	end
 	
