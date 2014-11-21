@@ -373,7 +373,7 @@ form#tags {
 
 h1#leaving {
   color: dimgrey;
-  width: 29.5%;
+  text-align:center;
   padding-top: 20%;
   margin: auto;
   font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
