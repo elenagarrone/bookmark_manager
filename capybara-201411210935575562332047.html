@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Bookmark manager</title>
+	<link rel="stylesheet" type="text/css" href="/css/reset.css">  
+  <link rel="stylesheet" type="text/css" href="/css/application.css">
+  <link href='https://fonts.googleapis.com/css?family=Bitter:400,700|Oswald' rel='stylesheet' type='text/css'>
+</head>
+	<body>
+	<header>
+  <div id="logo"><a href="/" id="homepage-logo">Bookmark Manager</a></div>
+  
+    
+  
+
+  <div id="user-links">
+    
+      <a href='/users/new' id='sign-up' class='button'>Sign up</a>
+      <a href='/sessions/new' id='sign-in' class='button'>Sign in</a>
+    
+
+  </div>
+</header>
+
+		
+
+	Sorry, there were the following problems with the form.
+	<ul id="errors">
+		
+		 <li>The email or password is incorrect</li>
+		
+	</ul>
+	
+	<form action="/sessions" method="post" class="smart-orange">
+    <h1>Please sign in
+        <span>Please fill all the fields.</span>
+    </h1>
+    <label>
+        <span>Email :</span>
+        <input id="email" type="email" name="email" placeholder="example@example.com" />
+    </label>
+    
+    <label>
+        <span>Password :</span>
+        <input id="password" type="password" name="title" />
+        <a href="/request_password">Forgot your password?</a> 
+    </label>
+    <label>
+        <span>&nbsp;</span> 
+        <input type="submit" class="button" value="Sign in" /> 
+    </label>
+</form>
+
+  <footer>
+  <div id='makersacademy-logo'>
+    <a href="https://www.makersacademy.com/">
+    <img src="http://www.makersacademy.com/images/logo.png">
+    </a>
+  </div>
+  <div id="technologies">
+    <p>
+      I built this page at
+      <a href='https://makersacademy.com'>Makers Academy, a highly selective 12 week coding course in London</a>.
+    </p>
+    <p>
+      This website is built using Ruby, Sinatra, Rspec, Capybara, HTML and CSS.
+    </p>
+  </div>
+</footer>
+	</body>
+</html>

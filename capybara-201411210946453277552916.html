@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Bookmark manager</title>
+	<link rel="stylesheet" type="text/css" href="/css/reset.css">  
+  <link rel="stylesheet" type="text/css" href="/css/application.css">
+  <link href='https://fonts.googleapis.com/css?family=Bitter:400,700|Oswald' rel='stylesheet' type='text/css'>
+</head>
+	<body>
+	<header>
+  <div id="logo"><a href="/" id="homepage-logo">Bookmark Manager</a></div>
+  
+    
+      <a href="/links/new" type="submit" class="button highlighten">Add link</a>
+      <form id="tags" method="get" action="/tags">
+        <input class="search_tags" name="search_tags" type="text">
+        <input class='button_tag' type="submit" value="Search tag">
+      </form>
+    
+  
+
+  <div id="user-links">
+    
+    
+      <form id="sign-out" method="post" action="/sessions">
+        <span id="welcome-message">
+          Welcome, email@email.com
+          <input type="hidden" name="_method" value="delete">
+          <input type="submit" value="Sign out" class='sign_out'>
+        </span>
+      </form>
+
+    
+
+  </div>
+</header>
+
+		
+
+	
+	<div id="links-container">
+  <ul id="links">
+  	
+  		<li class='link'>
+  <a class='title' href="http://http://www.makersacademy.com">Makers Academy</a>
+  <div class='description'>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+  <span class='source'>
+    added yesterday by
+    <a href="#">elenagarrone.dev@gmail.com</a>
+  </span>
+</li>
+  	
+  		<li class='link'>
+  <a class='title' href="http://http://www.google.com">Google</a>
+  <div class='description'>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+  <span class='source'>
+    added yesterday by
+    <a href="#">elenagarrone.dev@gmail.com</a>
+  </span>
+</li>
+  	
+  		<li class='link'>
+  <a class='title' href="http://http://www.bing.com">Bing</a>
+  <div class='description'>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+  <span class='source'>
+    added yesterday by
+    <a href="#">elenagarrone.dev@gmail.com</a>
+  </span>
+</li>
+  	
+  		<li class='link'>
+  <a class='title' href="http://http://www.code.org">Code.org</a>
+  <div class='description'>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+  <span class='source'>
+    added yesterday by
+    <a href="#">elenagarrone.dev@gmail.com</a>
+  </span>
+</li>
+  	
+  </ul>
+</div>
+
+  <footer>
+  <div id='makersacademy-logo'>
+    <a href="https://www.makersacademy.com/">
+    <img src="http://www.makersacademy.com/images/logo.png">
+    </a>
+  </div>
+  <div id="technologies">
+    <p>
+      I built this page at
+      <a href='https://makersacademy.com'>Makers Academy, a highly selective 12 week coding course in London</a>.
+    </p>
+    <p>
+      This website is built using Ruby, Sinatra, Rspec, Capybara, HTML and CSS.
+    </p>
+  </div>
+</footer>
+	</body>
+</html>
