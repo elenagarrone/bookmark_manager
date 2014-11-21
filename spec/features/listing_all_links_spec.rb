@@ -4,9 +4,6 @@ require 'features/helpers/session.rb'
 feature "User browses the list of links" do
 	
 	before(:each) {
-		Link.create(:url => "http://www.makersacademy.com",
-					:title => "Makers Academy",
-					:tags => [Tag.first_or_create(:text => 'education')])
 		Link.create(:url => "http://www.google.com",
 					:title => "Google",
 					:tags => [Tag.first_or_create(:text => 'search')])
@@ -30,16 +27,14 @@ feature "User browses the list of links" do
 			expect(page).to have_button('Search tag')
 		end
 
-		# it "filtered tags" do
-		# 		visit '/'
-		# 		within('#tags'){ fill_in("search_tags", with: "search")}
-		# 		save_and_open_page
-		# 		click_button('Search tag')
-		# 		expect(page).not_to have_content("Makers Academy")
-		# 		expect(page).not_to have_content("Code.org")
-		# 		expect(page).to have_content("Google")
-		# 		expect(page).to have_content("Bing")
-		# end
+		it "filtered tags" do
+				visit '/'
+				fill_in("search_tags", with: "search")
+				click_button('Search tag')
+				expect(page).not_to have_content("Code.org")
+				expect(page).to have_content("Google")
+				expect(page).to have_content("Bing")
+		end
 
 end
 
