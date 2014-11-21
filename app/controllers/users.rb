@@ -1,5 +1,5 @@
 get '/users/new' do
-	@on_page = true
+	# @on_page = true
 	@user = User.new
 	erb :"users/new"
 end

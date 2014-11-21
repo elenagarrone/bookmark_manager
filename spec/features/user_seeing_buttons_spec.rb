@@ -25,6 +25,27 @@ feature "Buttons" do
           expect(page).not_to have_link('Add link')
         end
       end
+
+      feature "while on the sign in page" do
+        scenario "can see the 'Sign up'" do
+          sign_out("test@test.com", "test")
+          visit '/users/new'
+          expect(page).to have_link('Sign up')
+          expect(page).not_to have_button('Sign out')
+          expect(page).not_to have_link('Add link')
+          expect(page).not_to have_link('Sign in')
+        end
+      end
+
+      # feature "while on the sign up page" do
+      #   scenario "can see the 'Sign out'" do
+      #     visit '/sessions/new'
+      #     expect(page).to have_button('Sign out')
+      #     expect(page).not_to have_link('Add link')
+      #     expect(page).not_to have_link('Sign in')
+      #     expect(page).not_to have_link('Sign up')
+      #   end
+      # end
   
     end
 
@@ -43,6 +64,26 @@ feature "Buttons" do
       feature "while on the add link page" do
         scenario "can see the 'Sign out'" do
           visit '/links/new'
+          expect(page).to have_button('Sign out')
+          expect(page).not_to have_link('Add link')
+          expect(page).not_to have_link('Sign in')
+          expect(page).not_to have_link('Sign up')
+        end
+      end
+
+      feature "while on the sign in page" do
+        scenario "can see the 'Sign out'" do
+          visit '/users/new'
+          expect(page).to have_button('Sign out')
+          expect(page).not_to have_link('Add link')
+          expect(page).not_to have_link('Sign in')
+          expect(page).not_to have_link('Sign up')
+        end
+      end
+
+      feature "while on the sign up page" do
+        scenario "can see the 'Sign out'" do
+          visit '/sessions/new'
           expect(page).to have_button('Sign out')
           expect(page).not_to have_link('Add link')
           expect(page).not_to have_link('Sign in')

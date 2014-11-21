@@ -1,5 +1,5 @@
 get '/sessions/new' do
-	@on_page = true
+	# @on_page = true
 	erb :"sessions/new"
 end
 
