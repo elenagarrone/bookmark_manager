@@ -24,3 +24,19 @@ Technologies:
 To do:
 -----
 - [ ] password token should be sent by email;
+
+Testing:
+-----
+
+Clone the repo:
+```shell
+$ git clone https://github.com/elenagarrone/bookmark_manager.git
+```
+Change into the directory:
+```shell
+$ cd bookmark_manager
+```
+Run:
+```shell
+$ rspec
+```
