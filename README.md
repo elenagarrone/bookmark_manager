@@ -23,6 +23,7 @@ Technologies:
 
 To do:
 -----
+- [ ] request for new password;
 - [ ] password token should be sent by email;
 
 Testing:
