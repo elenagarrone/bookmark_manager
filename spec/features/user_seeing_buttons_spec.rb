@@ -23,6 +23,7 @@ feature "Buttons" do
           expect(page).to have_link('Sign up')
           expect(page).not_to have_button('Sign out')
           expect(page).not_to have_link('Add link')
+          expect(page).not_to have_button('Search tag')
         end
       end
 
@@ -31,6 +32,7 @@ feature "Buttons" do
           sign_out("test@test.com", "test")
           visit '/sessions/new'
           expect(page).to have_link('Sign up')
+          expect(page).not_to have_button('Search tag')
           expect(page).not_to have_button('Sign out')
           expect(page).not_to have_link('Add link')
           expect(page).not_to have_link('Sign in')
@@ -45,6 +47,7 @@ feature "Buttons" do
         scenario "can see the 'Sign out' and 'Add link'" do
           visit '/'
           expect(page).to have_button('Sign out')
+          expect(page).to have_button('Search tag')
           expect(page).to have_link('Add link')
           expect(page).not_to have_link('Sign in')
           expect(page).not_to have_link('Sign up')
@@ -55,6 +58,7 @@ feature "Buttons" do
         scenario "can see the 'Sign out'" do
           visit '/links/new'
           expect(page).to have_button('Sign out')
+          expect(page).not_to have_button('Search tag')
           expect(page).not_to have_link('Add link')
           expect(page).not_to have_link('Sign in')
           expect(page).not_to have_link('Sign up')
@@ -65,6 +69,7 @@ feature "Buttons" do
         scenario "can see the 'Sign out'" do
           visit '/sessions/new'
           expect(page).to have_button('Sign out')
+          expect(page).to have_button('Search tag')
           expect(page).to have_link('Add link')
           expect(page).not_to have_link('Sign in')
           expect(page).not_to have_link('Sign up')
@@ -75,6 +80,7 @@ feature "Buttons" do
         scenario "can see the 'Sign out'" do
           visit '/users/new'
           expect(page).to have_button('Sign out')
+          expect(page).to have_button('Search tag')
           expect(page).to have_link('Add link')
           expect(page).not_to have_link('Sign in')
           expect(page).not_to have_link('Sign up')
