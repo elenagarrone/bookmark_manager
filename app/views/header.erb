@@ -22,8 +22,15 @@
       </form>
 
     <% else %>
-      <a href='/users/new' id='sign-up' class='button'>Sign up</a>
-      <a href='/sessions/new' id='sign-in' class='button'>Sign in</a>
+      <% if @sign_in_page %>
+        <a href='/users/new' id='sign-up' class='button'>Sign up</a>
+      <% elsif @sign_up_page %>
+        <a href='/sessions/new' id='sign-in' class='button'>Sign in</a>
+      <% else %>
+        <a href='/users/new' id='sign-up' class='button'>Sign up</a>
+        <a href='/sessions/new' id='sign-in' class='button'>Sign in</a>
+      <% end %>
+
     <% end %>
 
   </div>
