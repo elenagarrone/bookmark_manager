@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/elenagarrone/bookmark_manager/badges/gpa.svg)](https://codeclimate.com/github/elenagarrone/bookmark_manager)
+[![Test Coverage](https://codeclimate.com/github/elenagarrone/bookmark_manager/badges/coverage.svg)](https://codeclimate.com/github/elenagarrone/bookmark_manager)
+
 Bookmark manager
 ================
 
