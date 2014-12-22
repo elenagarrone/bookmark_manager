@@ -12,7 +12,7 @@ feature "Buttons" do
         :password_confirmation => 'test')
     sign_in("test@test.com", "test")
   end
-      
+
     feature 'While user is signed out' do
 
       feature "while on the homepage" do
@@ -37,8 +37,14 @@ feature "Buttons" do
           expect(page).not_to have_link('Add link')
           expect(page).not_to have_link('Sign in')
         end
+
+        scenario "can see the 'Forgotten password' link" do
+          sign_out("test@test.com", "test")
+          visit '/sessions/new'
+          expect(page).to have_link("Forgot your password?")
+        end
       end
-  
+
     end
 
     feature "While user is signed in" do
