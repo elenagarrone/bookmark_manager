@@ -22,16 +22,19 @@ Technologies:
 - DataMapper
 - HTML/CSS
 
-######It's a work in progress but you can have a look at it here: https://elenabookmarkmanager.herokuapp.com/
+On Heroku:
+---------
+
+######It's a work in progress but you can have a look at it here:
+https://elenabookmarkmanager.herokuapp.com/
 
 To do:
 -----
 - [ ] request for new password;
 - [ ] password token should be sent by email;
 
-Testing:
------
-
+How to use:
+----------
 Clone the repo:
 ```shell
 $ git clone https://github.com/elenagarrone/bookmark_manager.git
@@ -40,7 +43,20 @@ Change into the directory:
 ```shell
 $ cd bookmark_manager
 ```
-Run:
+Install the gems:
+```shell
+$ bundle install
+```
+Try it on localhost:
+```shell
+$ rackup
+#then on the browser go to:
+localhost:9292
+```
+
+How to test it:
+--------------
+From inside the directory run:
 ```shell
 $ rspec
 ```
