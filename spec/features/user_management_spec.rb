@@ -4,32 +4,33 @@ require 'features/helpers/session.rb'
 include SessionHelpers
 
 feature "User sign up" do
-	scenario "when being logged out" do
-		expect{ sign_up }.to change(User, :count).by(1)
-		expect(page).to have_content("Welcome, alice@example.com")
-		expect(User.first.email).to eq("alice@example.com")
-	end
 
-	scenario "is not possible if the user is already signed up" do
-		sign_up('a@a.com', 'pass', 'pass')
-		sign_out
-		sign_up('a@a.com', 'pass', 'pass')
-		expect(page).to have_content("This email is already taken")
-	end
+  scenario "when being logged out" do
+    expect{ sign_up }.to change(User, :count).by(1)
+    expect(page).to have_content("Welcome, alice@example.com")
+    expect(User.first.email).to eq("alice@example.com")
+  end
 
-	scenario "is not possible with a password that doesn't match" do
-		expect{ sign_up('a@a.com', 'pass', 'wrong') }.to change(User, :count).by(0)
-		expect(current_path).to eq('/users')
-		expect(page).to have_content("Sorry, there were the following problems with the form:")
-		expect(page).to have_content("Sorry, your passwords don't match")
-	end
+  scenario "is not possible if the user is already signed up" do
+    sign_up('a@a.com', 'pass', 'pass')
+    sign_out
+    sign_up('a@a.com', 'pass', 'pass')
+    expect(page).to have_content("This email is already taken")
+  end
 
-	scenario "with an email that is already registered" do
-		expect{ sign_up }.to change(User, :count).by(1)
-		expect{ sign_up }.to change(User, :count).by(0)
-		expect(page).to have_content("Sorry, there were the following problems with the form:")
-		expect(page).to have_content("This email is already taken")
-	end
+  scenario "is not possible with a password that doesn't match" do
+    expect{ sign_up('a@a.com', 'pass', 'wrong') }.to change(User, :count).by(0)
+    expect(current_path).to eq('/users')
+    expect(page).to have_content("Sorry, there were the following problems with the form:")
+    expect(page).to have_content("Sorry, your passwords don't match")
+  end
+
+  scenario "with an email that is already registered" do
+    expect{ sign_up }.to change(User, :count).by(1)
+    expect{ sign_up }.to change(User, :count).by(0)
+    expect(page).to have_content("Sorry, there were the following problems with the form:")
+    expect(page).to have_content("This email is already taken")
+  end
 
 end
 

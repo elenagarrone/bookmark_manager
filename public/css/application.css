@@ -14,7 +14,7 @@ header {
 
 header #logo {
   margin: auto 0;
-  display: flex;  
+  display: flex;
   font-family: 'Bitter', serif;
   font-size: 22px;
 }
@@ -87,6 +87,7 @@ input.sign_out {
   margin-right: 5px;
   text-shadow: 0 0 2px rgba(0,0,0,0.4);
 }
+
 input.sign_out:hover {
   background-color:#D26935;
 }
@@ -129,8 +130,6 @@ span#welcome-message {
 .link a.title:visited {
   color:#fd6214;
 }
-
-  }
 
 .link .description {
   margin: 10px inherit;
@@ -198,6 +197,7 @@ footer p {
   -moz-border-radius: 5px;
   box-shadow: 0 0 5px rgba(0,0,0,0.6);
 }
+
 .smart-green h1 {
   font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
   padding: 20px 0px 20px 40px;
@@ -210,8 +210,8 @@ footer p {
   -webkit-border-radius: 5px 5px 0px 0px;
   -moz-border-radius: 5px 5px 0px 0px;
   border-bottom:1px solid #89AF4C;
-
 }
+
 .smart-green h1>span {
   display: block;
   font-size: 11px;
@@ -222,11 +222,13 @@ footer p {
   display: block;
   margin: 0px 0px 5px;
 }
+
 .smart-green label>span {
   float: left;
   margin-top: 10px;
   color: #5E5E5E;
 }
+
 .smart-green input[type="text"], input[type='url'] {
   color: #555;
   height: 30px;
@@ -252,6 +254,7 @@ footer p {
   color: #FFF;
   text-shadow: 1px 1px 1px #949494;
 }
+
 .smart-green .button:hover {
   background-color:#80A24A;
 }
@@ -275,6 +278,7 @@ footer p {
   -moz-border-radius: 5px;
   box-shadow: 0 0 5px rgba(0,0,0,0.6);
 }
+
 .smart-orange h1 {
   font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
   padding: 20px 0px 20px 40px;
@@ -287,8 +291,8 @@ footer p {
   -webkit-border-radius: 5px 5px 0px 0px;
   -moz-border-radius: 5px 5px 0px 0px;
   border-bottom:1px solid #D26935;
-
 }
+
 .smart-orange h1>span {
   display: block;
   font-size: 11px;
@@ -299,11 +303,13 @@ footer p {
   display: block;
   margin: 0px 0px 5px;
 }
+
 .smart-orange label>span {
   float: left;
   margin-top: 10px;
   color: #5E5E5E;
 }
+
 .smart-orange input[type="password"],input[type='text'], input[type="email"] {
   color: #555;
   height: 30px;
@@ -329,6 +335,7 @@ footer p {
   color: #FFF;
   text-shadow: 1px 1px 1px #949494;
 }
+
 .smart-orange .button:hover {
   background-color:#D26935;
 }
@@ -379,12 +386,3 @@ h1#leaving {
   font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
   font-size: 30px;
 }
-
-
-
-
-
-
-
-
-

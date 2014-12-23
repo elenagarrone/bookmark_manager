@@ -7,8 +7,8 @@ feature "Password forgotten" do
 
   before(:each) do
     User.create(:email => "test@test.com",
-    :password => 'test',
-    :password_confirmation => 'test')
+      :password => 'test',
+      :password_confirmation => 'test')
   end
 
   scenario "clicking on the button i should be redirected to another page" do
@@ -37,4 +37,5 @@ feature "Password forgotten" do
     #click_button('Submit')
     expect(page).to have_content()#"Your password has been reset succesfully"
   end
+  
 end
