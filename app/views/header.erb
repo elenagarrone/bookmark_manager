@@ -12,7 +12,7 @@
 
   <div id="user-links">
     <% if current_user %>
-    
+
       <form id="sign-out" method="post" action="/sessions">
         <span id="welcome-message">
           Welcome, <%= current_user.email %>

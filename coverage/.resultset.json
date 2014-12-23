@@ -75,14 +75,13 @@
       ],
       "/home/elena/projects/bookmark_manager/app/models/tag.rb": [
         1,
-        1,
         null,
         1,
         null,
         1,
+        null,
         1,
-        null,
-        null,
+        1,
         null,
         null
       ],
@@ -212,6 +211,6 @@
         null
       ]
     },
-    "timestamp": 1419333453
+    "timestamp": 1419334496
   }
 }
