@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'features/helpers/session.rb'
 
 feature "User browses the list of links" do
-	
+
 	before(:each) {
 		Link.create(:url => "http://www.google.com",
 					:title => "Google",
@@ -15,7 +15,7 @@ feature "User browses the list of links" do
 					:tags => [Tag.first_or_create(:text => 'education')])
 		sign_up
 	}
-	
+
 
 		scenario "when opening the home page" do
 			visit '/'
@@ -37,4 +37,3 @@ feature "User browses the list of links" do
 		end
 
 end
-

@@ -108,7 +108,6 @@
       "/home/elena/projects/bookmark_manager/app/controllers/users.rb": [
         1,
         10,
-        null,
         10,
         10,
         null,
@@ -129,7 +128,6 @@
       "/home/elena/projects/bookmark_manager/app/controllers/sessions.rb": [
         1,
         15,
-        null,
         15,
         null,
         null,
@@ -214,6 +212,6 @@
         null
       ]
     },
-    "timestamp": 1419331759
+    "timestamp": 1419333453
   }
 }

@@ -1,19 +1,18 @@
 get '/users/new' do
-	@sign_up_page = true
-	# @on_page = true
-	@user = User.new
-	erb :"users/new"
+  @sign_up_page = true
+  @user = User.new
+  erb :"users/new"
 end
 
 post '/users' do
-	@user = User.create(:email => params[:email],
-					   :password => params[:password],
-					   :password_confirmation => params[:password_confirmation])
-	if @user.save
-		session[:user_id] = @user.id
-		redirect to ('/')
-	else
-		flash.now[:errors] = @user.errors.full_messages
-		erb :"/users/new"
-	end
+  @user = User.create(:email => params[:email],
+            :password => params[:password],
+            :password_confirmation => params[:password_confirmation])
+  if @user.save
+    session[:user_id] = @user.id
+    redirect to ('/')
+  else
+    flash.now[:errors] = @user.errors.full_messages
+    erb :"/users/new"
+  end
 end
