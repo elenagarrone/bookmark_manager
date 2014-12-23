@@ -17,7 +17,7 @@ feature "Buttons" do
 
       feature "while on the homepage" do
         scenario "can see the 'Sign in' and 'Sign up'" do
-          sign_out("test@test.com", "test")
+          sign_out
           visit '/'
           expect(page).to have_link('Sign in')
           expect(page).to have_link('Sign up')
@@ -29,7 +29,7 @@ feature "Buttons" do
 
       feature "while on the sign in page" do
         scenario "can see the 'Sign up'" do
-          sign_out("test@test.com", "test")
+          sign_out
           visit '/sessions/new'
           expect(page).to have_link('Sign up')
           expect(page).not_to have_button('Search tag')
@@ -39,7 +39,7 @@ feature "Buttons" do
         end
 
         scenario "can see the 'Forgotten password' link" do
-          sign_out("test@test.com", "test")
+          sign_out
           visit '/sessions/new'
           expect(page).to have_link("Forgot your password?")
         end

@@ -18,7 +18,7 @@ module SessionHelpers
 		click_button 'Sign in'
 	end
 
-	def sign_out(email, password)
+	def sign_out
 		click_button "Sign out"
 		visit "/"
 	end

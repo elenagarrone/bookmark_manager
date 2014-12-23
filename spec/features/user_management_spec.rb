@@ -12,7 +12,7 @@ feature "User sign up" do
 
 	scenario "is not possible if the user is already signed up" do
 		sign_up('a@a.com', 'pass', 'pass')
-		sign_out('a@a.com', 'pass')
+		sign_out
 		sign_up('a@a.com', 'pass', 'pass')
 		expect(page).to have_content("This email is already taken")
 	end
