@@ -14,10 +14,9 @@ Technologies:
 ------------
 - Ruby
 - Rspec
-- Cucumber
 - Capybara
 - Sinatra
-- PSQL and Postgres
+- PostgreSQL
 - BCrypt
 - DataMapper
 - HTML/CSS
@@ -42,6 +41,15 @@ $ git clone https://github.com/elenagarrone/bookmark_manager.git
 Change into the directory:
 ```shell
 $ cd bookmark_manager
+```
+Supposing you have installed <a href='http://www.postgresql.org/'>PostgreSQL</a>, create the databases:
+```shell
+$ psql
+> create database "chitter_development";
+#and
+> create database "chitter_test";
+#after they have been created, type:
+>\q
 ```
 Install the gems:
 ```shell
