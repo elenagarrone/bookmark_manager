@@ -1,4 +1,7 @@
 require 'spec_helper'
+require 'features/helpers/session.rb'
+
+include SessionHelpers
 
 feature "User adds a new link" do
 
@@ -32,13 +35,4 @@ feature "User adds a new link" do
     expect(link.tags.map(&:text)).to include('ruby')
   end
 
-  def add_link(url, title, tags = [])
-    within('#new-link') do
-      fill_in 'url', :with => url
-      fill_in 'title', :with => title
-      fill_in 'tags', :with => tags.join(' ')
-      click_button 'Add'
-    end
-  end
-	
 end
