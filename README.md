@@ -5,10 +5,10 @@ Bookmark manager
 ================
 
 During week four we built a bookmark manager, similar to pineapple.io or delicious.com in spirit. A bookmark manager is a good use case for exploring how relational databases work.
-<img src='http://i59.tinypic.com/sgr32w.jpg'>
-<img src='http://i58.tinypic.com/33o5j42.jpg'>
-<img src='http://i61.tinypic.com/154fyph.jpg'>
-<img src='http://i61.tinypic.com/2ywzali.jpg'>
+<img src='images/home.png'>
+<img src='images/sign_in.png'>
+<img src='images/sign_up.png'>
+<img src='images/add_link.png'>
 
 Technologies:
 ------------
